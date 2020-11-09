@@ -12,9 +12,9 @@ inputs:
     required: true
     default: "Mona the Octocat"
   
-    third-greeting:
-      description: "a third greeting"
-      required: false
+  third-greeting:
+    description: "a third greeting"
+    required: false
 
 runs:
   using: "node12"
