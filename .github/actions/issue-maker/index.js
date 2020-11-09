@@ -4,7 +4,7 @@ const github = require("@actions/github");
 async function run() {
   try {
     const issueTitle = core.getInput("issue-title");
-    const jbody = core.getInput("joke-body");
+    const jokeBody = core.getInput("joke");
     const token = core.getInput("repo-token");
 
     const octokit = github.getOctokit(token);
@@ -13,7 +13,7 @@ async function run() {
       repo: github.context.repo.repo,
       owner: github.context.repo.owner,
       title: issueTitle,
-      body: jbody,
+      body: jokeBody,
     });
   } catch (err) {
     core.setFailed(err.message);
