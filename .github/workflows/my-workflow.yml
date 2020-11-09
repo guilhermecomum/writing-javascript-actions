@@ -10,6 +10,4 @@ jobs:
       - name: hello-action
         uses: ./.github/actions/hello-world  
         with:
-          first-greeting: "Pedra"
-          second-greeting: "Tesoura"
           third-greeting: "Papel"
